@@ -15,8 +15,8 @@ node {
     def SF_INSTANCE_URL = env.SF_INSTANCE_URL ?: "https://login.salesforce.com"
 	
     def DEPLOYMENT_TYPE=env.DEPLOYMENT_TYPE // Incremental Deployment = DELTA ; Full Deployment = FULL
-    def SF_SOURCE_COMMIT_ID=env.SOURCE_BRANCH
-    def SF_TARGET_COMMIT_ID=env.TARGET_BRANCH
+    def SF_SOURCE_COMMIT_ID=env.SOURCE_COMMIT
+    def SF_TARGET_COMMIT_ID=env.TARGET_COMMIT
     
     //Defining SFDX took kit path against toolbelt
     def toolbelt = tool 'toolbelt'
