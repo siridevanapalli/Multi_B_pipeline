@@ -41,7 +41,7 @@ node {
     def DEPLOYMENT_TYPE=env.DEPLOYMENT_TYPE // Incremental Deployment = DELTA ; Full Deployment = FULL
     def DEPLOYDIR='force-app'
     def SF_DELTA_FOLDER='DELTA_PKG'
-    def TEST_LEVEL= 'NoTestRun'
+    def TEST_LEVEL=env.TEST_LEVEL
     def SF_SOURCE_COMMIT_ID=env.SF_SOURCE_COMMIT_ID
     def SF_TARGET_COMMIT_ID=env.SF_TARGET_COMMIT_ID
     def APEX_PMD=env.APEX_PMD
