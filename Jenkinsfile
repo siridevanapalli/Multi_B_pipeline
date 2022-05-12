@@ -73,8 +73,8 @@ node {
 	echo "workspace directory is ${workspace}"
 	    withCredentials([
 		    file(credentialsId: SERVER_KEY_CREDENTIALS_ID_PROD, variable: 'server_key_file_prod'),
-		    file(credentialsId: SERVER_KEY_CREDENTIALS_ID_DEV, variable: 'server_key_file_dev'),
-		    file(credentialsId: SERVER_KEY_CREDENTIALS_ID_QA, variable: 'server_key_file_qa')
+		    file(credentialsId: SERVER_KEY_CREDENTIALS_ID_DEV, variable: 'server_key_file_dev')
+		    //file(credentialsId: SERVER_KEY_CREDENTIALS_ID_QA, variable: 'server_key_file_qa')
 	    ]) {
 		    
 		// -------------------------------------------------------------------------
