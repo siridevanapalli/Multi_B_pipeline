@@ -144,7 +144,7 @@ node {
 		stage('Package Validation') {
       			if (DEPLOYMENT_TYPE == 'DELTA')
             		{
-				if (env.BRANCH_NAME ==~ /(master)/) {
+				if (env.BRANCH_NAME ==~ /(main)/) {
             				rc = command "${toolbelt}sfdx force:source:deploy -c -p ${SF_DELTA_FOLDER}/${DEPLOYDIR} -u ${SF_USERNAME_PROD} -w 500 -l ${TEST_LEVEL}"
 				}
 				if (env.BRANCH_NAME ==~ /(develop)/) {
@@ -156,7 +156,7 @@ node {
             		}
             		else
             		{
-				if (env.BRANCH_NAME ==~ /(master)/) {
+				if (env.BRANCH_NAME ==~ /(main)/) {
             				rc = command "${toolbelt}sfdx force:source:deploy -c -p ${DEPLOYDIR} -u ${SF_USERNAME_PROD} -w 500 -l ${TEST_LEVEL}"
 				}
 				if (env.BRANCH_NAME ==~ /(develop)/) {
@@ -176,7 +176,7 @@ node {
 		stage('Package Deployment') {
       			if (DEPLOYMENT_TYPE == 'DELTA')
             		{
-				if (env.BRANCH_NAME ==~ /(master)/) {
+				if (env.BRANCH_NAME ==~ /(main)/) {
             				rc = command "${toolbelt}sfdx force:source:deploy -p ${SF_DELTA_FOLDER}/${DEPLOYDIR} -u ${SF_USERNAME_PROD} -w 500 -l ${TEST_LEVEL}"
 				}
 				if (env.BRANCH_NAME ==~ /(develop)/) {
@@ -188,7 +188,7 @@ node {
             		}
             		else
             		{
-				if (env.BRANCH_NAME ==~ /(master)/) {
+				if (env.BRANCH_NAME ==~ /(main)/) {
             				rc = command "${toolbelt}sfdx force:source:deploy -p ${DEPLOYDIR} -u ${SF_USERNAME_PROD} -w 500 -l ${TEST_LEVEL}"
 				}
 				if (env.BRANCH_NAME ==~ /(develop)/) {
