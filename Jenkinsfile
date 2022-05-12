@@ -60,7 +60,7 @@ node {
 				choice(choices: ['', 'True', 'False'], name: 'APEX_PMD'), string('SF_SOURCE_COMMIT_ID'), string('SF_TARGET_COMMIT_ID')])])
 	    
 	    	checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: 'develop'], [name: 'master'], [name: 'CI']], 
-						      extensions: [], userRemoteConfigs: [[url: 'https://github.com/srbsreeram/SFDX-Azure-Pipeline.git']]]
+						      extensions: [], userRemoteConfigs: [[url: 'https://github.com/siridevanapalli/Multi_B_pipeline.git']]]
 	    
     }
 
