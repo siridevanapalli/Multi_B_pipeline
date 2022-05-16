@@ -1,0 +1,16 @@
+[
+  {
+    "action": "Deploy",
+    "metadataType": "CustomObject",
+    "componentName": "Atom5__c",
+    "message": "",
+    "path": "Delta_pkg_CI\\force-app\\main\\default\\objects\\Atom5__c.object-meta.xml"
+  },
+  {
+    "action": "Deploy",
+    "metadataType": "CustomObject",
+    "componentName": "Atom6__c",
+    "message": "",
+    "path": "Delta_pkg_CI\\force-app\\main\\default\\objects\\Atom6__c.object-meta.xml"
+  }
+]
